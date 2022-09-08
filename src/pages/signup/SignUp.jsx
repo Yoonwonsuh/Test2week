@@ -51,6 +51,7 @@ const SignUp = () => {
         })
         .catch((err) => {
           setEmailDuplicate(false);
+          console.log(err)
         });
     }
   }, [member.email]);

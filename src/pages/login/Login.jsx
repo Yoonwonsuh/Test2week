@@ -36,6 +36,7 @@ const Login = () => {
       apis
         .loginMember({ email, password })
         .then((res) => {
+          console.log(res)
           if (res.data.success === true) {
             return (
               localStorage.setItem('userId', res.data.result.userId),
@@ -46,6 +47,7 @@ const Login = () => {
           }
         })
         .catch((err) => {
+          console.log(err)
           setDoNotAccess(false);
         });
     }
