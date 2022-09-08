@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './KakaoMap.scss';
-const { kakao } = window;
+
 
 const KakaoMap = ({
   searchPlace,
@@ -9,6 +9,7 @@ const KakaoMap = ({
   coordNumber,
   placeName,
 }) => {
+  const { kakao } = window;
   useEffect(() => {
     const container = document.getElementById('map');
     const options = {
