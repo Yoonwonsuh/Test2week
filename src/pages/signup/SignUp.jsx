@@ -38,7 +38,7 @@ const SignUp = () => {
       setEmailCheck(false);
     } else {
       setEmailCheck(true);
-
+  
       // 이메일 중복 검사
       apis
         .checkEmailDuplicate(member.email)
